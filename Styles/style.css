@@ -1,0 +1,25 @@
+/* GLOBAL CONFIGURATION */
+
+* {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CLASSES */
+
+/* Dropdown Buttom */
+.dropdown{
+    display: block;
+}
+
+.dropdown ul{
+    display: none;
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+/* End Dropdown Butom */
