@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/carrousel.css".css">
+    
     <title>Instituição - Página Inicial</title>
 </head>
 <body>
@@ -43,10 +44,52 @@
     </header>
     <main>
 
+        <div class="carrousel">
+
+            <!-- Radio Buttons -->
+            <input type="radio" name="radio-btn-slider" id="radio1">
+            <input type="radio" name="radio-btn-slider" id="radio2">
+            <input type="radio" name="radio-btn-slider" id="radio3">
+            <input type="radio" name="radio-btn-slider" id="radio4">
+            <!-- ############# -->
+            
+            <div class="slides">
+                <!-- Slide images -->
+                <div class="slide first">
+                    <img src="Images/notice01.png" alt="Notice 01">
+                </div>
+                <div class="slide">
+                    <img src="Images/notice02.png" alt="Notice 02">
+                </div>
+                <div class="slide">
+                    <img src="Images/notice03.png" alt="Notice 03">
+                </div>
+                <div class="slide">
+                    <img src="Images/notice04.png" alt="Notice 04">
+                </div>
+                <!-- ########### -->
+            </div>
+
+            <div class="navigation-auto">
+                <div class="nav-btn01"></div>
+                <div class="nav-btn02"></div>
+                <div class="nav-btn03"></div>
+                <div class="nav-btn04"></div>
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
+
     </main>
     <footer>
         <span>Feito pro J. V. Casas &copy;</span>
     </footer>
-    
+    <script src="Scripts/carrousel.js"></script>
 </body>
 </html>
