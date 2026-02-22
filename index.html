@@ -5,86 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/carrousel.css".css">
+    <link rel="shortcut icon" href="Images/icons/favicon.ico" type="image/x-icon">
     
-    <title>Instituição - Página Inicial</title>
+    <title>JGIRJ - Home Page</title>
 </head>
 <body>
     
     <nav>
+        <a href="#">
+            <div class="logo-button">
+                <picture>
+                    <img src="Images/icons/logo50p.png" alt="Icone Instituição">
+                </picture>
+                <span>
+                    JGIRJ
+                </span>
+            </div>
+        </a>
         <ul>
             <li>
-                <a href="#">Inicial</a>
+                <a href="#">Home</a>
             </li>
             <li class="dropdown">
-                <a href="#">Sobre a Instituição</a>
-                <ul>
-                    <li>
-                        <a href="">Sobre Nós</a>
-                    </li>
-                    <li>
-                        <a href="#">Diretória</a>
-                    </li>
-                    <li>
-                        <a href="#">Comissão de Grau</a>
-                    </li>
-                </ul>
+                <a href="#">About JGIRJ</a>
+                <div class="dropdown-menu">
+                    <a href="#">About Us</a>                    
+                    <a href="#">Board of Directors</a>
+                    <a href="#">Degree Committee</a>
+                </div>
             </li>
             <li>
-                <a href="#">Noticias</a>
+                <a href="#">News and Notices</a>
             </li>
             <li>
-                <a href="#">Eventos</a>
+                <a href="#">Events</a>
             </li>
         </ul>
     </nav>
     <header>
+        <img src="Images/icons/logo300p.png" alt="Logo">
         <h1>
-            Site da Instituição
+            Judo Generic Institution<br> of<br> Rio de Janeiro
         </h1>
     </header>
     <main>
 
-        <div class="carrousel">
-
-            <!-- Radio Buttons -->
-            <input type="radio" name="radio-btn-slider" id="radio1">
-            <input type="radio" name="radio-btn-slider" id="radio2">
-            <input type="radio" name="radio-btn-slider" id="radio3">
-            <input type="radio" name="radio-btn-slider" id="radio4">
-            <!-- ############# -->
-            
-            <div class="slides">
-                <!-- Slide images -->
-                <div class="slide first">
-                    <img src="Images/notice01.png" alt="Notice 01">
+        <section class="home-topic">
+            <h1 class="topic">
+                Main News
+            </h1>
+            <div class="topic-content">
+                <div class="carrousel">
+                    <!-- Radio Buttons -->
+                    <input type="radio" name="radio-btn-slider" id="radio1">
+                    <input type="radio" name="radio-btn-slider" id="radio2">
+                    <input type="radio" name="radio-btn-slider" id="radio3">
+                    <input type="radio" name="radio-btn-slider" id="radio4">
+                    <!-- ############# -->
+                
+                    <div class="slides">
+                        <!-- Slide images -->
+                        <div class="slide first">
+                            <img src="Images/notice01.png" alt="Notice 01">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/notice02.png" alt="Notice 02">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/notice03.png" alt="Notice 03">
+                        </div>
+                        <div class="slide">
+                            <img src="Images/notice04.png" alt="Notice 04">
+                        </div>
+                        <!-- ########### -->
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="nav-btn01"></div>
+                        <div class="nav-btn02"></div>
+                        <div class="nav-btn03"></div>
+                        <div class="nav-btn04"></div>
+                    </div>
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
                 </div>
-                <div class="slide">
-                    <img src="Images/notice02.png" alt="Notice 02">
-                </div>
-                <div class="slide">
-                    <img src="Images/notice03.png" alt="Notice 03">
-                </div>
-                <div class="slide">
-                    <img src="Images/notice04.png" alt="Notice 04">
-                </div>
-                <!-- ########### -->
             </div>
+        </section>
 
-            <div class="navigation-auto">
-                <div class="nav-btn01"></div>
-                <div class="nav-btn02"></div>
-                <div class="nav-btn03"></div>
-                <div class="nav-btn04"></div>
-            </div>
+        <section class="home-topic">
 
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-
-        </div>
+        </section>
 
     </main>
     <footer>

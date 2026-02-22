@@ -1,8 +1,20 @@
+:root {
+    --fullBlack: #000000;
+    --fullWhite: #ffffff;
+    --fullRed: #ff0000;
+    --primaryColor0: #1b1919;
+    --primaryColor1: #9c9c9c;
+    --primaryColor2: #5e5d5d;
+    --primaryColor3: #2a1717;
+    --primaryColor4: #430606;
+}
+
 .carrousel {
-    margin: 0px auto;
+    margin: 0;
     width: 800px;
     height: 350px;
     overflow: hidden;
+    background-color: var(--fullBlack);
 }
 
 .slides {
@@ -102,4 +114,11 @@
 
 #radio4:checked ~.navigation-auto .nav-btn04 {
     background-color: #ffffff;
+}
+
+.slide-text {
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background-color: var(--primaryColor0);
 }
