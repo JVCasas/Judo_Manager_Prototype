@@ -1,14 +1,26 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'Rancho';
-    src: url('../Fonts/Rancho/Rancho-Regular.ttf');
-}
-
-@font-face {
     font-family: 'Nova Square';
     src: url('../Fonts/Nova_Square/NovaSquare-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../Fonts/Libre_Baskerville/LibreBaskerville-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Pt Sans';
+    src: url('../Fonts/PT_Sans/PTSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../Fonts/Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+
 
 :root {
     --fullBlack: #000000;
@@ -18,6 +30,7 @@
     --primaryColor1: #9c9c9c;
     --primaryColor2: #5e5d5d;
     --primaryColor3: #2a1717;
+    --primaryColor4: #430606;
     --glassBlack: #00000044;
     --glassWhite: #ffffff44;
     --glassRed: #ff000044;
@@ -52,7 +65,7 @@ a {
 
 /* Nav Menu */
 nav {
-    font-size: 1.5em;
+    font-size: 1.4em;
     display: flex;
     position: fixed;
     left: 0;
@@ -63,6 +76,7 @@ nav {
     color: var(--fullWhite);
     align-items: center;
     z-index: 1000;
+    font-family: 'Outfit';
 }
 
 nav li {
@@ -149,10 +163,10 @@ main {
 
 .topic-content {
     max-width: 1100px;
-    background-color: var(--glassRed);
-    border-radius: 10px;
-    margin: -10px auto 10px auto;
-    padding-top: 10px;
+    background-color: var(--glassBlack);
+    border-radius: 0  0 10px 10px;
+    margin: 0px auto 10px auto;
+    padding: 10px;
     box-shadow: inset 0px 0px 2px var(--fullBlack);
 }
 
@@ -161,9 +175,43 @@ main {
     background-image: linear-gradient(180deg, var(--primaryColor3), var(--primaryColor4), var(--primaryColor3));
     border-radius: 10px;
     padding: 10px;
+    margin: auto;
     box-shadow: inset 0px 0px 2px var(--fullBlack);
     color:var(--fullWhite);
     font-family: 'Nova Square';
+}
+
+.card-item {
+    max-width: 300px;
+    max-height: 300px;
+    background-color: var(--glassRed);
+    padding: 10px 0px;
+    margin: 10px auto;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.card-title {
+    color: var(--fullWhite);
+    font-family: 'Pt Sans';
+    background-color: var(--primaryColor4);
+    padding: 5px;
+}
+
+.card-item p {
+    padding: 5px;
+    font-family: 'Outfit';
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.card-choise {
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    display: inline-block;
+    background-color: var(--primaryColor2);
+    color: var(--fullWhite);
 }
 
 footer {
