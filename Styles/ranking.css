@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Nova Square';
+    src: url('../Fonts/Nova_Square/NovaSquare-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../Fonts/Libre_Baskerville/LibreBaskerville-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Pt Sans';
+    src: url('../Fonts/PT_Sans/PTSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../Fonts/Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+:root {
+    --fullBlack: #000000;
+    --fullWhite: #ffffff;
+    --fullRed: #ff0000;
+    --primaryColor0: #1b1919;
+    --primaryColor1: #9c9c9c;
+    --primaryColor2: #5e5d5d;
+    --primaryColor3: #2a1717;
+    --primaryColor4: #430606;
+    --glassBlack: #00000044;
+    --glassWhite: #ffffff44;
+    --glassRed: #ff000044;
+    --glassColor0: #1b191944;
+    --glassColor1: #9c9c9c44;
+    --glassColor2: #5e5d5d44;
+    --glassColor3: #2a171744;
+    --glassColor4: #43060644;
+}
+
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    background-color: var(--primaryColor2);
+    color: var(--fullWhite);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Pt Sans', Arial, Roboto, sans-serif;
+}
+
+caption {
+    padding: 10px;
+    background-color: var(--glassBlack);
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.legend {
+    background-color: var(--primaryColor4);
+}
+
+tr {
+    border: 3px solid var(--primaryColor0);
+}
+
+thead {
+    position: sticky;
+    top: 9vh;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: var(--primaryColor1);
+}
+
+td {
+    text-align: center;
+}
