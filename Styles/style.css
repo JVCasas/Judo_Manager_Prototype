@@ -140,6 +140,10 @@ main {
     border-radius: 10px;
 }
 
+.table-container {
+    overflow-x: scroll;
+}
+
 footer {
     background-color: var(--primaryColor0);
     color:var(--fullWhite);
