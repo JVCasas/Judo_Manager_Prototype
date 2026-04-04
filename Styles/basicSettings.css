@@ -1,0 +1,79 @@
+/* Initial Settigs and fontsets */
+@charset "UTF-8";
+
+@font-face
+{/* Highlight Title Font */
+    font-family: 'Nova Square';
+    src: url('../Fonts/Nova_Square/NovaSquare-Regular.ttf');
+}
+
+@font-face
+{/* Standard Serif Font */
+    font-family: 'Libre Baskerville';
+    src: url('../Fonts/Libre_Baskerville/LibreBaskerville-VariableFont_wght.ttf');
+}
+
+@font-face
+{/* Standard Content Font */
+    font-family: 'Pt Sans';
+    src: url('../Fonts/PT_Sans/PTSans-Regular.ttf');
+}
+
+@font-face
+{/* Standard Tittles Font */
+    font-family: 'Outfit';
+    src: url('../Fonts/Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+
+
+/* Setting Variables */
+:root 
+{
+    
+    /* Color Set*/
+    --absolute00:           #000000;
+    --absolute01:           #ffffff;
+    --absolute02:           #ff0000;
+    --primaryColor00:       #1b1919;
+    --primaryColor01:       #ebe9e9;
+    --primaryColor02:       #9c9c9c;
+    --primaryColor03:       #5e5d5d;
+    --primaryColor04:       #2e2d2d;
+    --primaryColor05:       #2a1717;
+    --primaryColor06:       #430606;
+    --primaryColor07:       #975958;
+    
+    /* Font Set */
+    --title:                'Nova Square', Orbitron;
+    --articleText:          'Pt Sans', Roboto, Arial, Helvetica, sans-serif;
+    --tittles:              'Outfit', 'Bebas Neue', sans-serif;
+    --serifText:            'Libre Baskerville', Baskerville, 'Times New Roman', serif;
+}
+
+
+
+/* Document Reset */
+* {
+    padding:                0;
+    margin:                 0;
+    box-sizing:             border-box;
+    font-family:            var(--articleText);
+    color:                  var(--primaryColor00);
+}
+
+html, body {
+    width:                  100vw;
+    height:                 100vh;
+    background-color:       var(--primaryColor02);
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+a
+{
+    text-decoration: none;
+}
