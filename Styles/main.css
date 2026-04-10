@@ -1,1 +1,82 @@
-@import url('basicSettings.css');
+main
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+h1
+{
+    padding: 10px;
+}
+
+p
+{
+    padding: 10px;
+    font-family: var(--articleText);
+}
+
+.main-page-topic
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin-top: 20px;
+}
+
+.topic-tittle
+{
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--primaryColor06);
+    font-family: var(--tittles);
+    color: var(--primaryColor01);
+}
+
+.topic-content
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    width: 90%;
+    background-color: var(--primaryColor01);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-item
+{
+    padding: 10px 0px;
+    margin: 5px;
+    background-color: var(--primaryColor07);
+    border-radius: 10px;
+}
+
+.card-item-tittle
+{
+    background-color: var(--primaryColor06);
+    color: var(--primaryColor01);
+}
+
+.card-item-image
+{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.topic-content .card-item
+{
+    grid-column-start: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .card-item
+    {
+        width: 300px;
+    }
+}
