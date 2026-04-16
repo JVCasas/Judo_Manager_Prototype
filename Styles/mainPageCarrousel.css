@@ -1,0 +1,145 @@
+.main-page-carrousel
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80vw;
+    margin: 10px 0px;
+}
+
+
+/* Main Carrousel (horizontal) */
+.carrousel-container-a
+{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carrousel-track-horizontal
+{
+    display: flex;
+}
+
+.carrousel-item-image
+{
+    width: 80vw;
+    height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+#carrousel-previous-button, #carrousel-next-button
+{
+    display: block;
+    width: 40px;
+    height: 50px;
+    background-color: var(--primaryColor00);
+    color: var(--primaryColor01);
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carrousel-previous-button:hover, #carrousel-next-button:hover
+{
+    background-color: var(--primaryColor03);
+    cursor: pointer;
+}
+
+#carrousel-previous-button
+{
+    border-radius: 0px 10px 10px 0px;
+    left: 0;
+}
+
+#carrousel-next-button
+{
+    border-radius: 10px 0px 0px 10px;
+    right: 0;
+}
+
+/* Secondary Carrousel (vertical) */
+.carrousel-container-b
+{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: var(--primaryColor04);
+}
+
+.carrousel-track-vertical
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.carrousel-card
+{
+    width: 80vw;
+    height: 200px;
+}
+
+.carrousel-card h2
+{
+    padding: 5px;
+    color:var(--primaryColor01);
+    font-size: 2em;
+}
+
+.carrousel-card p
+{
+    color:var(--primaryColor01);
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 768px)
+{
+    /* Main Carrousel (horizontal) */
+    .carrousel-container-a
+    {
+        width: 70%;
+        height: 30vw;
+    }
+
+    .carrousel-item-image
+    {
+        width: 56vw;
+    }
+
+    /* Secondary Carrousel (vertical) */
+    .carrousel-container-b
+    {
+        width: 30%;
+        height: 30vw;
+        background-color: var(--primaryColor04);
+    }
+
+    .carrousel-track-vertical
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carrousel-card
+    {
+        width: 24vw;
+        height: 30vw;
+    }
+
+    .carrousel-card p
+    {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-height: 428px)
+{
+    .carrousel-card p
+    {
+        font-size: 0.9em;
+    }
+}

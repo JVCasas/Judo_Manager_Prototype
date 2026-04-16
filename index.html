@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="Images/Logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Styles/basicSettings.css">
     <link rel="stylesheet" href="Styles/menuBar.css">
+    <link rel="stylesheet" href="Styles/mainPageCarrousel.css">
     <link rel="stylesheet" href="Styles/main.css">
     <title>Generic Institute - Home</title>
 </head>
@@ -64,9 +65,62 @@
         <section class="main-page-topic">
             <h1 class="topic-tittle">Recent News</h1>
             <div class="topic-content">
-                <p>
-                    Content
-                </p>
+                <div class="main-page-carrousel">
+                    <div class="carrousel-container-a">
+                        <div class="carrousel-track-horizontal">
+                            <div class="carrousel-item">
+                                <img src="https://placehold.co/600x400/ff0000/white?text=News+01" alt="news" class="carrousel-item-image">
+                            </div>
+                            <div class="carrousel-item">
+                                <img src="https://placehold.co/600x400/00ff00/white?text=News+02" alt="news" class="carrousel-item-image">
+                            </div>
+                            <div class="carrousel-item">
+                                <img src="https://placehold.co/600x400/0000ff/white?text=News+03" alt="news" class="carrousel-item-image">
+                            </div>
+                            <div class="carrousel-item">
+                                <img src="https://placehold.co/600x400/ffff00/white?text=News+04" alt="news" class="carrousel-item-image">
+                            </div>
+                        </div>
+                        <button id="carrousel-previous-button"><<</button>
+                        <button id="carrousel-next-button">>></button>
+                    </div>
+                    <div class="carrousel-container-b">
+                        <div class="carrousel-track-vertical">
+                            <div class="carrousel-item">
+                                <div class="carrousel-card">
+                                    <h2>News 01</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carrousel-item">
+                                <div class="carrousel-card">
+                                    <h2>News 02</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carrousel-item">
+                                <div class="carrousel-card">
+                                    <h2>News 03</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carrousel-item">
+                                <div class="carrousel-card">
+                                    <h2>News 04</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -144,6 +198,7 @@
     <!-- END CONTENT -->
 
     <script src="Scripts/basicFunctions.js"></script>
+    <script src="Scripts/execMainPage.js"></script>
     <script src="https://kit.fontawesome.com/5d577f89d7.js" crossorigin="anonymous"></script>
 </body>
 </html>
