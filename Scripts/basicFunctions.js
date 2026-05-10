@@ -39,9 +39,32 @@ class Carroussel
         }
 
         this.insertClones();
-        this.initStandardPosition();
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {this.verifyWindowModification(resizeTimer)});
+        this.initStandardPosition()
         this.addLooping();
         this.addAutoMove(this.time);
+    }
+
+    verifyWindowModification(timer)
+    {
+        clearTimeout(timer);
+        timer = setTimeout(() => {this.updateDimensions()}, 150);
+    }
+
+    updateDimensions()
+    {
+        if (this.orientation == 'X')
+        {
+            this.itemSize = this.track.children[0].clientWidth;
+        }
+        if (this.orientation == 'Y')
+        {
+            this.itemSize = this.track.children[0].clientHeight;
+        }
+        this.track.style.transition = 'none';
+        this.track.style.transform = `translate${this.orientation}(-${this.counter * this.itemSize}px)`;
     }
 
     addButtons(nextBtn, prevBtn)
@@ -58,6 +81,8 @@ class Carroussel
         this.track.appendChild(this.firstItemClone);
         this.track.insertBefore(this.lastItemClone, this.track.children[0])
     }
+
+    
 
     move(step)
     {

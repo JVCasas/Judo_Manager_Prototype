@@ -63,7 +63,7 @@
 }
 
 html, body {
-    width:                  100vw;
+    width:                  100%;
     height:                 100vh;
     background-color:       var(--primaryColor02);
 }
@@ -76,4 +76,9 @@ body
 a
 {
     text-decoration: none;
+}
+
+button:hover
+{
+    cursor: pointer;
 }

@@ -6,6 +6,10 @@
     margin: 10px 0px;
 }
 
+.carrousel-item
+{
+    flex: 0 0 auto;
+}
 
 /* Main Carrousel (horizontal) */
 .carrousel-container-a
@@ -93,7 +97,7 @@
 {
     color:var(--primaryColor01);
     text-align: justify;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 @media screen and (min-width: 768px)
@@ -129,17 +133,19 @@
         width: 24vw;
         height: 30vw;
     }
-
-    .carrousel-card p
-    {
-        font-size: 1.1em;
-    }
 }
 
-@media screen and (max-height: 428px)
-{
+@media screen and (min-width: 992px) {
+    .carrousel-card h2
+    {
+        font-size: 2.5em;
+    }
+
     .carrousel-card p
     {
-        font-size: 0.9em;
+        color:var(--primaryColor01);
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 2em;
     }
 }

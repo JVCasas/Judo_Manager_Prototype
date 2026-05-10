@@ -11,191 +11,239 @@
     <title>Generic Institute - Home</title>
 </head>
 <body>
-    <!-- START MAIN MENU -->
-    <menu class="main-menu">
-        <a href="#">
-            <div id="home-button">
-                <img src="Images/Logo/logo50p.png" alt="Logo" id="logo-home-button">
-                <span id="acronym-home-button">JGIRJ</span>
+
+    <header>
+        <img src="Images/logo.svg" alt="Logo">
+        <h1 class="title">
+            Judo Generic Institution<br> of<br> Rio de Janeiro
+        </h1>
+    </header>
+
+    <div class="page-content">
+        <!-- START MAIN MENU -->
+        <menu class="main-menu">
+            <a href="#">
+                <div id="home-button">
+                    <img src="Images/Logo/logo50p.png" alt="Logo" id="logo-home-button">
+                    <span id="acronym-home-button">JGIRJ</span>
+                </div>
+            </a>
+            <div id="menu-button">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </a>
-
-        <div id="menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <div id="menu-options">
-            <ul>
-                <li>
-                    <a href="#"><span class="menu-option-button">News</span></a>
-                </li>
-                <li>
-                    <a href="#"><span class="menu-option-button">Events</span></a>
-                </li>
-                <li>
-                    <a href="#"><span class="menu-option-button">Ranking</span></a>
-                </li>
-                <li>
-                    <div id="menu-dropdown">
-                        <span class="menu-option-button">About JGIRJ</span>
-                        <ul class="menu-dropdown-list">
-                            <li>
-                                <a href="#"><span class="menu-dropdown-option-button">About Us</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-dropdown-option-button">Board of Directors</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-dropdown-option-button">Degree Committee</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="#"><span class="menu-option-button">Learn</span></a>
-                </li>
-            </ul>
-        </div>
-    </menu>
-    <!-- END MAIN MENU -->
-
-    <!-- START CONTENT -->
-    <main>
-        <!-- RECENT NEWS SECTION -->
-        <section class="main-page-topic">
-            <h1 class="topic-tittle">Recent News</h1>
-            <div class="topic-content">
-                <div class="main-page-carrousel">
-                    <div class="carrousel-container-a">
-                        <div class="carrousel-track-horizontal">
-                            <div class="carrousel-item">
-                                <img src="https://placehold.co/600x400/ff0000/white?text=News+01" alt="news" class="carrousel-item-image">
+            <div id="menu-options">
+                <ul>
+                    <li>
+                        <a href="#"><span class="menu-option-button">News</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="menu-option-button">Events</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="menu-option-button">Ranking</span></a>
+                    </li>
+                    <li>
+                        <div id="menu-dropdown">
+                            <span class="menu-option-button">About JGIRJ</span>
+                            <ul class="menu-dropdown-list">
+                                <li>
+                                    <a href="#"><span class="menu-dropdown-option-button">About Us</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-dropdown-option-button">Board of Directors</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="menu-dropdown-option-button">Degree Committee</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="menu-option-button">Learn</span></a>
+                    </li>
+                </ul>
+            </div>
+        </menu>
+        <!-- END MAIN MENU -->
+        <!-- START CONTENT -->
+        <main>
+            <!-- RECENT NEWS SECTION -->
+            <section class="main-page-topic">
+                <h1 class="topic-tittle">Recent News</h1>
+                <div class="topic-content">
+                    <div class="main-page-carrousel">
+                        <div class="carrousel-container-a">
+                            <div class="carrousel-track-horizontal">
+                                <div class="carrousel-item">
+                                    <img src="https://placehold.co/600x400/ff0000/white?text=News+01" alt="news" class="carrousel-item-image">
+                                </div>
+                                <div class="carrousel-item">
+                                    <img src="https://placehold.co/600x400/00ff00/white?text=News+02" alt="news" class="carrousel-item-image">
+                                </div>
+                                <div class="carrousel-item">
+                                    <img src="https://placehold.co/600x400/0000ff/white?text=News+03" alt="news" class="carrousel-item-image">
+                                </div>
+                                <div class="carrousel-item">
+                                    <img src="https://placehold.co/600x400/ffff00/white?text=News+04" alt="news" class="carrousel-item-image">
+                                </div>
                             </div>
-                            <div class="carrousel-item">
-                                <img src="https://placehold.co/600x400/00ff00/white?text=News+02" alt="news" class="carrousel-item-image">
-                            </div>
-                            <div class="carrousel-item">
-                                <img src="https://placehold.co/600x400/0000ff/white?text=News+03" alt="news" class="carrousel-item-image">
-                            </div>
-                            <div class="carrousel-item">
-                                <img src="https://placehold.co/600x400/ffff00/white?text=News+04" alt="news" class="carrousel-item-image">
+                            <button id="carrousel-previous-button"><<</button>
+                            <button id="carrousel-next-button">>></button>
+                        </div>
+                        <div class="carrousel-container-b">
+                            <div class="carrousel-track-vertical">
+                                <div class="carrousel-item">
+                                    <div class="carrousel-card">
+                                        <h2>News 01</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carrousel-item">
+                                    <div class="carrousel-card">
+                                        <h2>News 02</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carrousel-item">
+                                    <div class="carrousel-card">
+                                        <h2>News 03</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carrousel-item">
+                                    <div class="carrousel-card">
+                                        <h2>News 04</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button id="carrousel-previous-button"><<</button>
-                        <button id="carrousel-next-button">>></button>
                     </div>
-                    <div class="carrousel-container-b">
-                        <div class="carrousel-track-vertical">
-                            <div class="carrousel-item">
-                                <div class="carrousel-card">
-                                    <h2>News 01</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
-                                    </p>
-                                </div>
+                </div>
+            </section>
+            <!-- TOURNAMENT RESULTS SECTION -->
+            <section class="main-page-topic">
+                <h1 class="topic-tittle">Tournament Results</h1>
+                <div class="topic-content">
+                    <div class="card-item">
+                        <h2 class="card-item-tittle">Tournament 01</h2>
+                        <div class="card-content">
+                            <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
+                            <p class="card-item-summary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <h2 class="card-item-tittle">Tournament 02</h2>
+                        <div class="card-content">
+                            <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
+                            <p class="card-item-summary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <h2 class="card-item-tittle">Tournament 03</h2>
+                        <div class="card-content">
+                            <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
+                            <p class="card-item-summary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <h2 class="card-item-tittle">Tournament 04</h2>
+                        <div class="card-content">
+                            <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
+                            <p class="card-item-summary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <h2 class="card-item-tittle">Tournament 05</h2>
+                        <div class="card-content">
+                            <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
+                            <p class="card-item-summary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <h2 class="card-item-tittle">Tournament 06</h2>
+                        <div class="card-content">
+                            <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
+                            <p class="card-item-summary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- JOIN US SECTION -->
+            <section class="main-page-topic">
+                <h1 class="topic-tittle">Join Us</h1>
+                <div class="topic-content">
+                    <div class="join-us-content">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eligendi nostrum deserunt deleniti, molestias obcaecati doloribus odio provident sequi, maiores ipsam! Soluta, et aut iusto non deleniti laudantium quasi dicta.
+                        </p>
+                        <div class="card-group">
+                            <div class="card-option">
+                                <h3>Register as Atlhete</h3>
+                                <ul>
+                                    <li>Eligibility for ranking</li>
+                                    <li>Discount on event registration</li>
+                                    <li>Event registration made easy</li>
+                                </ul>
+                                <button class="card-option-button">Athlete Register</button>
                             </div>
-                            <div class="carrousel-item">
-                                <div class="carrousel-card">
-                                    <h2>News 02</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="carrousel-item">
-                                <div class="carrousel-card">
-                                    <h2>News 03</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="carrousel-item">
-                                <div class="carrousel-card">
-                                    <h2>News 04</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam at provident debitis hic, deleniti quis unde veritatis, deserunt ea eius aspernatur perspiciatis nam quia dolorum ipsum? Unde, vero doloribus.
-                                    </p>
-                                </div>
+                            <div class="card-option">
+                                <h3>Register as Association</h3>
+                                <ul>
+                                    <li>Discount on tournament registration fees</li>
+                                    <li>Athlete control platform</li>
+                                </ul>
+                                <button class="card-option-button">Association Register</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- TOURNAMENT RESULTS SECTION -->
-        <section class="main-page-topic">
-            <h1 class="topic-tittle">Tournament Results</h1>
-            <div class="topic-content">
-                <div class="card-item">
-                    <h2 class="card-item-tittle">Tournament 01</h2>
-                    <div class="card-content">
-                        <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
-                        <p class="card-item-summary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
-                        </p>
+            </section>
+            <section class="main-page-topic">
+                <h1 class="topic-tittle">Follow Us</h1>
+                <div class="topic-content">
+                    <img class="logo-social-media-content" src="Images/logo.svg" alt="">
+                    <div class="social-medias">
+                        <button class="social-media"><i class="fa-brands fa-instagram"></i> Instagram</button>
+                        <button class="social-media"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                        <button class="social-media"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
                     </div>
                 </div>
-                <div class="card-item">
-                    <h2 class="card-item-tittle">Tournament 02</h2>
-                    <div class="card-content">
-                        <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
-                        <p class="card-item-summary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
-                        </p>
-                    </div>
+            </section>
+            <section class="main-page-topic">
+                <h1 class="topic-tittle">Filiate</h1>
+                <div class="topic-content">
+                    <img class="logo-outside-institution" id="blue" src="Images/logo.svg" alt="">
+                    <img class="logo-outside-institution" id="red" src="Images/logo.svg" alt="">
                 </div>
-                <div class="card-item">
-                    <h2 class="card-item-tittle">Tournament 03</h2>
-                    <div class="card-content">
-                        <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
-                        <p class="card-item-summary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
-                        </p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h2 class="card-item-tittle">Tournament 04</h2>
-                    <div class="card-content">
-                        <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
-                        <p class="card-item-summary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
-                        </p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h2 class="card-item-tittle">Tournament 05</h2>
-                    <div class="card-content">
-                        <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
-                        <p class="card-item-summary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
-                        </p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <h2 class="card-item-tittle">Tournament 06</h2>
-                    <div class="card-content">
-                        <img src="https://placehold.co/600x400/green/white?text=Tounament" alt="card image" class="card-item-image">
-                        <p class="card-item-summary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio quisquam sunt consequuntur nihil. Eos eveniet, vitae at quaerat itaque libero ducimus, neque aspernatur quisquam nostrum pariatur odit minima voluptates!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- JOIN US SECTION -->
-        <section class="main-page-topic">
-            <h1 class="topic-tittle">Join Us</h1>
-            <div class="topic-content">
-                <p>
-                    Content
-                </p>
-            </div>
-        </section>
-    </main>
-    <!-- END CONTENT -->
+            </section>
+        </main>
+        <!-- END CONTENT -->
+        
+        <footer>
+            <span>Site made by JVCasas</span>
+        </footer>
+    </div>
 
     <script src="Scripts/basicFunctions.js"></script>
     <script src="Scripts/execMainPage.js"></script>
