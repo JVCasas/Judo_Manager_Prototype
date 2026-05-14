@@ -134,3 +134,19 @@ class Carroussel
         setInterval(() => {this.move(1)}, time)
     }
 }
+
+class Dropdown
+{
+    constructor(trigger, list)
+    {
+        this.trigger = document.querySelector(trigger);
+        this.list = document.querySelector(list);
+
+        this.trigger.addEventListener('click', () => {this.toggleDropdown(this.list)})
+    }
+
+    toggleDropdown(list)
+    {
+        list.classList.toggle('active-dropdown');
+    }
+}
