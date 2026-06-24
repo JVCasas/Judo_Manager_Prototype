@@ -7,8 +7,7 @@
     <link rel="shortcut icon" href="Images/Logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="Styles/basicSettings.css">
     <link rel="stylesheet" href="Styles/menuBar.css">
-    <link rel="stylesheet" href="Styles/mainPageCarrousel.css">
-    <title>Register</title>
+    <link rel="stylesheet" href="Styles/form.css">
 </head>
 <body>
     <div class="page-content">
@@ -56,8 +55,146 @@
             </div>
         </menu>
 
-        
+        <main>
+            <section class="register-container">
+                <h1 class="register-container-tittle">Athlete Register</h1>
+                <div class="register-content">
+                    <form action="" method="post">
+
+                        <fieldset class="form-page active">
+                            <h1 class="services-tittle">About our Service Terms</h1>
+                            <div class="input-box">
+                                <p class="terms-explanation">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur autem quasi animi eos, voluptate quaerat dolorem explicabo in placeat temporibus nostrum ipsam perspiciatis nesciunt quas repellat possimus dolore laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem facilis perspiciatis explicabo distinctio sit quae tempora adipisci? Consectetur consequatur ex et quam non, deserunt voluptatibus nisi quisquam aliquid magni.
+                                </p>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset class="form-page">
+                            <legend>
+                                Login Data
+                            </legend>
+                            <div class="input-box">
+                                <input class="formInputText" type="email" name="email" id="email" placeholder=" " required>
+                                <label for="email" class="input-name">E-Mail</label>
+                            </div>
+                            <div class="input-box">
+                                <input class="formInputText" type="password" name="pass" id="pass" placeholder=" " required>
+                                <label for="pass" class="input-name">Password</label>
+                            </div>
+                            <div class="input-box">
+                                <input class="formInputText" type="password" name="passRepeat" id="passRepeat" placeholder=" " required>
+                                <label for="passRepeat" class="input-name">Repeat Password</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-page">
+                            <legend>
+                                Personal Data
+                            </legend>
+                            <div class="input-box">
+                                <input class="formInputText" type="text" name="athleteName" placeholder=" " id="athleteName">
+                                <label for="athleteName" class="input-name">Full Name</label>
+                            </div>
+                            <div class="input-box">
+                                <input class="formInputText" type="tel" name="telphone" placeholder=" " id="telphone">
+                                <label for="telphone" class="input-name">Phone</label>
+                            </div>
+                            <div class="input-box">
+                                <label for="birthDate" class="input-tittle">Birth Date</label>
+                                <br>
+                                <input class="formInputDate" type="date" name="birthDate" id="birthDate" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="input-tittle">Genre<span>
+                                <br>
+                                <input type="radio" id="genreF" class="formInputRadio" name="genre" value="F">
+                                <label for="genreF">Female</label>
+                                <input type="radio" id="genreM" class="formInputRadio" name="genre" value="M">
+                                <label for="genreM">Male</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-page">
+                            <legend>
+                                Athlete Data
+                            </legend>
+                            <div class="input-box">
+                                <input type="radio" id="RegisteredClub" name="clubType" value="0">
+                                <label for="">I am an athlete from a registered club.</label>
+                                <br>
+                                <input type="radio" id="RegisterInAClub" name="clubType" value="1">
+                                <label for="">I wish to register with a registered club.</label>
+                                <br>
+                                <input type="radio" id="OutsiderRegister" name="clubType" value="2">
+                                <label for="">I am an athlete from an unregistered club.</label>
+                            </div>
+                            <div class="input-box">
+                                <select name="association" id="associationSelect">
+                                    <option value="">Club A</option>
+                                    <option value="">Club B</option>
+                                    <option value="">Club C</option>
+                                    <option value="">Club D</option>
+                                </select>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="associationText" name="association" class="formInputText" placeholder=" ">
+                                <label for="associationText" class="input-name">Association</label>
+                            </div>
+                            <div class="input-box">
+                                <select name="belt" id="belt">
+                                    <option value="">White - 8º Kyu</option>
+                                    <option value="">Gray - 7º Kyu</option>
+                                    <option value="">Blue - 6º Kyu</option>
+                                    <option value="">Yellow - 5º Kyu</option>
+                                    <option value="">Orange - 4º Kyu</option>
+                                    <option value="">Green - 3º Kyu</option>
+                                    <option value="">Purple - 2º Kyu</option>
+                                    <option value="">Brown - 1º Kyu</option>
+                                    <option value="">Black - 2º Dan</option>
+                                    <option value="">Black - 3º Dan</option>
+                                    <option value="">Black - 4º Dan</option>
+                                    <option value="">Black - 5º Dan</option>
+                                    <option value="">Coral - 6º Dan</option>
+                                    <option value="">Coral - 7º Dan</option>
+                                    <option value="">Coral - 8º Dan</option>
+                                    <option value="">Coral - 9º Dan</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form-page">
+                            <legend>
+                                Conscent Terms
+                            </legend>
+                            <div class="input-box">
+                                <input type="checkbox" name="privacityAgree" id="privacityAgree" required>
+                                <label for="privacityAgree">I agree to the terms of the privacy policy.</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="checkbox" name="useAgree" id="useAgree" required>
+                                <label for="useAgree">I agree to the terms of use.</label>
+                            </div>
+                            <div class="input-box">
+                                <input type="checkbox" name="newsAgree" id="newsAgree">
+                                <label for="newsAgree">I wish to receive notifications and news via email.</label>
+                            </div>
+
+                            <input type="submit" value="Sent">
+                        </fieldset>
+                        <div class="button-box">
+                            <button class="page-button" id="prev-button">Preview</button>
+                            <button class="page-button" id="next-button">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
 
     </div>
+    <script src="Scripts/basicFunctions.js"></script>
+    <script src="Scripts/pageTurner.js"></script>
+    <script src="Scripts/execFormPage.js"></script>
+    <script src="https://kit.fontawesome.com/5d577f89d7.js" crossorigin="anonymous"></script>
 </body>
 </html>
