@@ -59,13 +59,17 @@
             <section class="register-container">
                 <h1 class="register-container-tittle">Athlete Register</h1>
                 <div class="register-content">
-                    <form action="" method="post">
+                    <form id="athleteRegistration" action="" method="post" novalidate>
 
                         <fieldset class="form-page active">
                             <h1 class="services-tittle">About our Service Terms</h1>
                             <div class="input-box">
                                 <p class="terms-explanation">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime consequatur autem quasi animi eos, voluptate quaerat dolorem explicabo in placeat temporibus nostrum ipsam perspiciatis nesciunt quas repellat possimus dolore laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem facilis perspiciatis explicabo distinctio sit quae tempora adipisci? Consectetur consequatur ex et quam non, deserunt voluptatibus nisi quisquam aliquid magni.
+                                    Welcome to the official [League Name] system!
+                                    <br>
+                                    To unlock your access, please fill out the requested information in the following form. We take your privacy seriously and guarantee that your information will be handled with the utmost security and responsibility.
+                                    <br>
+                                    By clicking 'Register' and completing your account creation, you declare that you are over 18 years old (or have authorization from a legal guardian) and confirm that you have read, understood, and fully agree to our [<a href="">Terms of Use</a>] and our [<a href="">Privacy Policy</a>]."
                                 </p>
                             </div>
                         </fieldset>
@@ -77,14 +81,36 @@
                             <div class="input-box">
                                 <input class="formInputText" type="email" name="email" id="email" placeholder=" " required>
                                 <label for="email" class="input-name">E-Mail</label>
+                                <div class="alertBox">
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O campo está vázio</span>
+                                    <br>
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O email já está cadastrado.</span>
+                                    <br>
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O email informado não é um email válido.</span>
+                                    <br>
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O provedor de email não aceito.</span>
+                                </div>
                             </div>
                             <div class="input-box">
                                 <input class="formInputText" type="password" name="pass" id="pass" placeholder=" " required>
                                 <label for="pass" class="input-name">Password</label>
+                                <div class="alertBox">
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O campo está vázio.</span>
+                                    <br>
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> A senha precisa ter no mínimo 8 caracteres</span>
+                                    <br>
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> A senha precisa ter pelo menos uma letra um número e um caracter especial (!, ?,@, #, $, %, &, *).</span>
+                                </div>
                             </div>
                             <div class="input-box">
                                 <input class="formInputText" type="password" name="passRepeat" id="passRepeat" placeholder=" " required>
                                 <label for="passRepeat" class="input-name">Repeat Password</label>
+                                <div class="alertBox">
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O campo está vázio.</span>
+                                    <br>
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> A senhas precisam ser iguais.</span>
+                                    <br>
+                                </div>
                             </div>
                         </fieldset>
 
@@ -95,6 +121,9 @@
                             <div class="input-box">
                                 <input class="formInputText" type="text" name="athleteName" placeholder=" " id="athleteName">
                                 <label for="athleteName" class="input-name">Full Name</label>
+                                <div class="alertBox">
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O campo está vázio.</span>
+                                </div>
                             </div>
                             <div class="input-box">
                                 <input class="formInputText" type="tel" name="telphone" placeholder=" " id="telphone">
@@ -104,14 +133,22 @@
                                 <label for="birthDate" class="input-tittle">Birth Date</label>
                                 <br>
                                 <input class="formInputDate" type="date" name="birthDate" id="birthDate" required>
+                                <div class="alertBox">
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O campo está vázio.</span>
+                                   <br>
+                                   <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> Informe uma data válida.</span>
+                                </div>
                             </div>
                             <div class="input-box">
                                 <span class="input-tittle">Genre<span>
                                 <br>
-                                <input type="radio" id="genreF" class="formInputRadio" name="genre" value="F">
+                                <input type="radio" id="genreF" class="formInputRadio" name="genre" value="F" required>
                                 <label for="genreF">Female</label>
-                                <input type="radio" id="genreM" class="formInputRadio" name="genre" value="M">
+                                <input type="radio" id="genreM" class="formInputRadio" name="genre" value="M" required>
                                 <label for="genreM">Male</label>
+                                <div class="alertBox">
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> O campo está vázio.</span>
+                                </div>
                             </div>
                         </fieldset>
 
@@ -120,16 +157,19 @@
                                 Athlete Data
                             </legend>
                             <div class="input-box">
-                                <input type="radio" id="RegisteredClub" name="clubType" value="0">
+                                <input type="radio" id="RegisteredClub" name="clubType" value="0" required>
                                 <label for="">I am an athlete from a registered club.</label>
                                 <br>
-                                <input type="radio" id="RegisterInAClub" name="clubType" value="1">
+                                <input type="radio" id="RegisterInAClub" name="clubType" value="1" required>
                                 <label for="">I wish to register with a registered club.</label>
                                 <br>
-                                <input type="radio" id="OutsiderRegister" name="clubType" value="2">
+                                <input type="radio" id="OutsiderRegister" name="clubType" value="2" required>
                                 <label for="">I am an athlete from an unregistered club.</label>
+                                <div class="alertBox">
+                                    <span class="input-warning"><i class="fa-solid fa-circle-xmark"></i> Selecione uma opção.</span>
+                                </div>
                             </div>
-                            <div class="input-box">
+                            <div class="input-box hide-container" id="selectContainer">
                                 <select name="association" id="associationSelect">
                                     <option value="">Club A</option>
                                     <option value="">Club B</option>
@@ -137,7 +177,7 @@
                                     <option value="">Club D</option>
                                 </select>
                             </div>
-                            <div class="input-box">
+                            <div class="input-box hide-container" id="textContainer">
                                 <input type="text" id="associationText" name="association" class="formInputText" placeholder=" ">
                                 <label for="associationText" class="input-name">Association</label>
                             </div>
@@ -194,6 +234,7 @@
     </div>
     <script src="Scripts/basicFunctions.js"></script>
     <script src="Scripts/pageTurner.js"></script>
+    <script src="Scripts/formFunctions.js"></script>
     <script src="Scripts/execFormPage.js"></script>
     <script src="https://kit.fontawesome.com/5d577f89d7.js" crossorigin="anonymous"></script>
 </body>
