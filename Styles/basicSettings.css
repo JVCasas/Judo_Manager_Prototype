@@ -35,6 +35,7 @@
     --absolute00:           #000000;
     --absolute01:           #ffffff;
     --absolute02:           #ff0000;
+    --absoluteContrast02:   #00ff00;
     --primaryColor00:       #1b1919;
     --primaryColor01:       #ebe9e9;
     --primaryColor02:       #9c9c9c;
@@ -43,6 +44,8 @@
     --primaryColor05:       #2a1717;
     --primaryColor06:       #430606;
     --primaryColor07:       #975958;
+    --contrastColor06:      #bcf9f9;
+    --contrastColor07:      #68a6a7;
     
     /* Font Set */
     --title:                'Nova Square', Orbitron;
