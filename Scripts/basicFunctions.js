@@ -150,3 +150,26 @@ class Dropdown
         list.classList.toggle('active-dropdown');
     }
 }
+
+class Modal
+{
+    constructor(trigger, modal, closeButton)
+    {
+        this.trigger = document.querySelector(trigger);
+        this.modal = document.querySelector(modal);
+        this.closeButton = document.querySelector(closeButton);
+
+        this.trigger.addEventListener('click', () => {this.openModal(this.modal)})
+        this.closeButton.addEventListener('click', () => {this.closeModal(this.modal)})
+    }
+    
+    openModal(modal)
+    {
+        modal.showModal();
+    }
+
+    closeModal(modal)
+    {
+        modal.close();
+    }
+}

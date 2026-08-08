@@ -87,6 +87,7 @@ p
 {
     background-color: var(--primaryColor06);
     color: var(--primaryColor01);
+    padding-left: 5px;
 }
 
 .card-item-image
@@ -99,6 +100,75 @@ p
 .topic-content .card-item
 {
     grid-column-start: 2;
+}
+
+.modal-open-button
+{
+    display: block;
+    margin: 10px;
+    color: var(--contrastColor06);
+    cursor: pointer;
+}
+
+.modal-open-button i
+{
+    color: var(--contrastColor06);
+}
+
+.tournament-card-expanded
+{
+    width: 70vw;
+    background-color: var(--primaryColor02);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tournament-card-expanded::-webkit-scrollbar
+{
+    display: none;
+}
+
+.tournament-card-expanded::backdrop
+{
+    background-color: var(--primaryColorGlass00);
+}
+
+.modal-header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primaryColor06);
+    margin-top: 15px;
+}
+
+.modal-tittle
+{
+    background-color: var(--primaryColor06);
+    color: var(--primaryColor01);
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+.modal-close-button
+{
+    cursor: pointer;
+}
+
+.modal-close-button i
+{
+    font-size: 2em;
+    color: var(--primaryColor01);
+}
+
+.modal-image
+{
+    aspect-ratio: 21/9;
+    width: 100%;
 }
 
 .join-us-content
